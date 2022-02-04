@@ -10,7 +10,26 @@
     align-items: center; }
     .button__hamburger-icon {
       width: 18px;
-      height: 13px; }
+      height: 2px;
+      background: #2c3241;
+      opacity: 0.6;
+      position: relative; }
+      .button__hamburger-icon::before {
+        width: 18px;
+        height: 2px;
+        background: #2c3241;
+        content: " ";
+        position: absolute;
+        top: -5px;
+        left: 0; }
+      .button__hamburger-icon::after {
+        width: 18px;
+        height: 2px;
+        background: #2c3241;
+        content: " ";
+        position: absolute;
+        bottom: -5px;
+        left: 0; }
   .button__blue {
     padding: 0 28px 0 28px;
     font-weight: bold;
