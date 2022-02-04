@@ -1,6 +1,6 @@
 # Foundation Project
 
-### [Site link](https://gromcode.github.io/layout-sample-project/)
+### [Site link](https://evgenijz.github.io/foundation/)
 
 Layout supports mobile (up-to-400) and desktop (up-to-1360) versions
 
