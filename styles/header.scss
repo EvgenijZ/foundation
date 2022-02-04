@@ -5,7 +5,7 @@
   top: 0;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   background-color: #fff;
   box-shadow: 0px 4px 16px rgba(44, 50, 65, 0.08);
 
@@ -17,7 +17,6 @@
     background: none;
     padding-top: 36px;
     max-width: 1140px;
-    flex-direction: row;
   }
 
   &__logotype {
