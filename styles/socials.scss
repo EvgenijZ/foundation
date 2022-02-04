@@ -1,0 +1,23 @@
+.socials {
+  margin-top: 31px;
+  height: 17px;
+  display: flex;
+  list-style-type: none;
+  padding: 0 15px;
+  margin: 31px 0 0 0;
+
+  @include min_width1400 {
+    margin-top: 15px;
+    margin-bottom: 16px;
+    margin-right: 2px;
+    padding: 0;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+
+    @include min_width1400 {
+      margin-top: 1px;
+    }
+  }
+}

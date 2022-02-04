@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  @include min_width1400 {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+.top-section {
+  background-color: #f3c6bd;
+}

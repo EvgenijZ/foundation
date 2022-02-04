@@ -1,0 +1,110 @@
+.jobs {
+  margin-top: 39px;
+  width: 100%;
+
+  @include min_width1400 {
+    margin-top: 110px;
+    max-width: 750px;
+  }
+}
+
+.vacancy {
+  $this: &;
+  border: 1px solid rgba(43, 41, 45, 0.2);
+  border-radius: 8px;
+  position: relative;
+  min-height: 140px;
+
+  @include min_width1400 {
+    min-height: 81px;
+  }
+
+  &:not(:first-child) {
+    margin-top: 15px;
+
+    @include min_width1400 {
+      margin-top: 20px;
+    }
+  }
+
+  &:hover {
+    background-color: $color_dark_blue_alt;
+
+    #{$this}__arrow {
+      background-color: $color_dark_blue_alt;
+
+      &::after {
+        content: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png");
+      }
+    }
+
+    #{$this}__title {
+      color: #fff;
+    }
+
+    #{$this}__description {
+      color: #fff;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 19px 71px 19px 20px;
+
+    @include min_width1400 {
+      flex-direction: row;
+      align-items: center;
+      padding: 26px 65px 26px 25px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: $color_black;
+  }
+
+  &__description {
+    margin: 18px 0 0 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color_light_black;
+
+    @include min_width1400 {
+      margin: 0;
+      max-width: 232px;
+      text-align: left;
+      width: 100%;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &__arrow {
+    background-color: #d5d4d5;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 8px 8px 0;
+
+    @include min_width1400 {
+      background-color: #fff;
+    }
+
+    &::after {
+      content: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png");
+      width: 7px;
+      height: 16px;
+      position: absolute;
+      top: calc(50% - 8px);
+      left: calc(50% - 3.5px);
+    }
+  }
+}

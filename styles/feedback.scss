@@ -1,0 +1,36 @@
+.feedback {
+  border-bottom: 1px solid $color_alt_grey;
+  padding: 39px 15px 50px 15px;
+
+  @include min_width1400 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 66px 0;
+    margin-top: 56px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: $color_dark_blue;
+    margin: 0;
+  }
+
+  &__ballon {
+    text-align: center;
+    margin-top: 40px;
+    max-width: 100%;
+    display: flex;
+
+    @include min_width1400 {
+      margin: 0;
+      position: absolute;
+      right: 26px;
+      bottom: 0;
+    }
+  }
+}
