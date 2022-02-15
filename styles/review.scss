@@ -6,12 +6,12 @@
       rgba(255, 255, 255, 0.05) 0%,
       rgba(255, 255, 255, 1e-5) 100%
     ),
-    #ffffff;
+    $color_white;
   background-blend-mode: overlay, normal;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
     inset 0px 1px 0px rgba(255, 255, 255, 0.1);
   border-bottom: 4px solid $color_blue;
-  @include min_width1400 {
+  @include lg-large-up {
     box-shadow: none;
     background-blend-mode: initial;
     margin-top: 44px;
@@ -24,7 +24,7 @@
     color: $color_black;
     margin: 0;
     min-height: 169px;
-    @include min_width1400 {
+    @include lg-large-up {
       min-height: 85px;
     }
   }

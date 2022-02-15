@@ -6,10 +6,10 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  background-color: #fff;
+  background-color: $color_white;
   box-shadow: 0px 4px 16px rgba(44, 50, 65, 0.08);
 
-  @include min_width1400 {
+  @include lg-large-up {
     box-shadow: none;
     max-width: 1400px;
     margin: 0 auto;
@@ -22,7 +22,7 @@
   &__logotype {
     margin: 8px 0 8px 15px;
 
-    @include min_width1400 {
+    @include lg-large-up {
       margin: 2px 0 0 0;
       width: 299px;
     }
@@ -30,7 +30,7 @@
     .logotype__description {
       display: none;
 
-      @include min_width1400 {
+      @include lg-large-up {
         display: block;
       }
     }
@@ -39,7 +39,7 @@
   &__menu {
     display: none;
 
-    @include min_width1400 {
+    @include lg-large-up {
       height: 48px;
       margin-left: auto;
       display: flex;
@@ -84,7 +84,7 @@
   .button__hamburger {
     margin-left: auto;
 
-    @include min_width1400 {
+    @include lg-large-up {
       display: none;
     }
   }

@@ -5,14 +5,14 @@
   flex-direction: column;
   align-items: center;
 
-  @include min_width1400 {
+  @include lg-large-up {
     flex-direction: row;
     justify-content: center;
     padding: 0;
   }
 
   &__picture {
-    @include min_width1400 {
+    @include lg-large-up {
       margin: 73px 123px 72px 0;
       display: flex;
     }
@@ -33,7 +33,7 @@
     color: $color_black;
     margin: 40px 0 0 0;
 
-    @include min_width1400 {
+    @include lg-large-up {
       text-align: left;
       margin: 0;
     }
@@ -46,7 +46,7 @@
     margin: 18px 0 0 0;
     min-height: 167px;
 
-    @include min_width1400 {
+    @include lg-large-up {
       min-height: 64px;
       max-width: 555px;
       margin: 12px 0 0 0;
@@ -55,7 +55,7 @@
 
   &__form {
     margin-top: 40px;
-    @include min_width1400 {
+    @include lg-large-up {
       display: flex;
       margin-top: 26px;
     }
@@ -63,7 +63,7 @@
 
   &__input {
     width: 100%;
-    background: #ffffff;
+    background: $color_white;
     border: 1px solid rgba(43, 41, 45, 0.2);
     box-sizing: border-box;
     border-radius: 2px;
@@ -74,10 +74,10 @@
     height: 48px;
 
     &::placeholder {
-      color: #2b292d;
+      color: $color_black;
     }
 
-    @include min_width1400 {
+    @include lg-large-up {
       margin-right: 10px;
       text-align: left;
     }
@@ -86,7 +86,7 @@
   &__button {
     width: 100%;
     margin-top: 12px;
-    @include min_width1400 {
+    @include lg-large-up {
       width: auto;
       margin-top: 0;
     }

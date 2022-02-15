@@ -7,11 +7,9 @@ html {
 }
 
 body {
-  @include min_width1400 {
-    max-width: 1400px;
-    margin: 0 auto;
-    position: relative;
-  }
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .top-section {

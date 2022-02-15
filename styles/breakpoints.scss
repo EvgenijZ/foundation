@@ -1,4 +1,4 @@
-@mixin min_width1400 {
+@mixin lg-large-up {
   @media screen and (min-width: 1400px) {
     @content;
   }

@@ -4,7 +4,7 @@
   background-color: $color_grey;
   padding: 26px 15px 46px 15px;
 
-  @include min_width1400 {
+  @include lg-large-up {
     padding: 77px 0 76px 0;
     margin: 0 0 30px 0;
     flex-direction: row;
@@ -20,19 +20,19 @@
     &:first-child {
       min-height: 180px;
 
-      @include min_width1400 {
+      @include lg-large-up {
         min-height: auto;
       }
     }
 
-    @include min_width1400 {
+    @include lg-large-up {
       max-width: 555px;
       height: 102px;
       margin-top: 0;
     }
 
     &:first-child {
-      @include min_width1400 {
+      @include lg-large-up {
         margin-right: 29px;
       }
     }
@@ -50,7 +50,7 @@
   &__description {
     margin: 8px 0 0 0;
 
-    @include min_width1400 {
+    @include lg-large-up {
       font-size: 22px;
       line-height: 32px;
       color: $color_black;

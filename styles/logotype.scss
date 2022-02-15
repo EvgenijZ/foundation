@@ -3,7 +3,7 @@
   text-decoration: none;
   align-items: center;
 
-  @include min_width1400 {
+  @include lg-large-up {
     align-items: start;
   }
 
@@ -11,7 +11,7 @@
     width: 54px;
     height: 48px;
 
-    @include min_width1400 {
+    @include lg-large-up {
       width: 66px;
       height: 60px;
     }
@@ -21,7 +21,7 @@
     margin-left: 7px;
     line-height: 25px;
 
-    @include min_width1400 {
+    @include lg-large-up {
       margin-left: 9px;
       height: 51px;
       margin-top: 4px;

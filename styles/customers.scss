@@ -3,7 +3,7 @@
   $this: &;
   flex-wrap: wrap;
 
-  @include min_width1400 {
+  @include lg-large-up {
     padding: 0;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -13,7 +13,7 @@
   }
 
   &__item {
-    width: 33.333333%;
+    flex: 1 0 33%;
     min-height: 95px;
     display: flex;
     align-items: center;
@@ -21,16 +21,17 @@
     border-bottom: 1px solid $color_alt_grey;
     border-right: 1px solid $color_alt_grey;
 
-    &:nth-child(3n) {
-      border-right: none;
-    }
-
-    @include min_width1400 {
+    @include lg-large-up {
       justify-content: space-between;
       border: none;
       width: auto;
       height: auto;
       min-height: inherit;
+      flex: 0 auto;
+    }
+
+    &:nth-child(3n) {
+      border-right: none;
     }
   }
 
@@ -38,7 +39,7 @@
     max-width: 80%;
     filter: brightness(0);
 
-    @include min_width1400 {
+    @include lg-large-up {
       max-width: 100%;
     }
   }

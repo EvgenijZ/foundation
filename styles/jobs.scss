@@ -2,7 +2,7 @@
   margin-top: 39px;
   width: 100%;
 
-  @include min_width1400 {
+  @include lg-large-up {
     margin-top: 110px;
     max-width: 750px;
   }
@@ -15,14 +15,14 @@
   position: relative;
   min-height: 140px;
 
-  @include min_width1400 {
+  @include lg-large-up {
     min-height: 81px;
   }
 
   &:not(:first-child) {
     margin-top: 15px;
 
-    @include min_width1400 {
+    @include lg-large-up {
       margin-top: 20px;
     }
   }
@@ -39,11 +39,11 @@
     }
 
     #{$this}__title {
-      color: #fff;
+      color: $color_white;
     }
 
     #{$this}__description {
-      color: #fff;
+      color: $color_white;
     }
   }
 
@@ -55,7 +55,7 @@
     flex-direction: column;
     padding: 19px 71px 19px 20px;
 
-    @include min_width1400 {
+    @include lg-large-up {
       flex-direction: row;
       align-items: center;
       padding: 26px 65px 26px 25px;
@@ -75,7 +75,7 @@
     line-height: 22px;
     color: $color_light_black;
 
-    @include min_width1400 {
+    @include lg-large-up {
       margin: 0;
       max-width: 232px;
       text-align: left;
@@ -94,8 +94,8 @@
     top: 0;
     border-radius: 0 8px 8px 0;
 
-    @include min_width1400 {
-      background-color: #fff;
+    @include lg-large-up {
+      background-color: $color_white;
     }
 
     &::after {
